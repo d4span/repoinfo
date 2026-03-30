@@ -1,6 +1,6 @@
 # git-repo-info
 
-A small, beginner-friendly Python CLI that inspects a local Git repository and prints concise, human-readable summaries. The tool is read-only and intentionally calls the Git executable (`git`) via subprocess to stay close to the commands students learn.
+Small, beginner-friendly Python CLI that inspects a local Git repository and prints concise, human-readable summaries. The tool is read-only and intentionally calls the Git executable (`git`) via subprocess to stay close to the commands students learn.
 
 Prerequisites
 - Python 3.11+
@@ -70,5 +70,3 @@ Developer notes
   - One file per subcommand: `summary.py`, `status.py`, `log.py`, `branches.py`, `remotes.py`
   - `cli.py` — argparse wiring and dispatch
 - Tests are in `tests/` and create temporary Git repositories to verify behavior.
-
-If you'd like a packaged install (`pip install -e .`) or an executable entrypoint, a small `pyproject.toml` or `setup.cfg` can be added — say so and that can be implemented next.
